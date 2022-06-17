@@ -6,13 +6,13 @@
 /*   By: rleite-s <rleite-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 19:00:11 by rleite-s          #+#    #+#             */
-/*   Updated: 2022/06/17 22:06:21 by rleite-s         ###   ########.fr       */
+/*   Updated: 2022/06/17 23:04:26 by rleite-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	size;
 
