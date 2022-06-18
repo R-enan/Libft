@@ -6,20 +6,20 @@
 /*   By: rleite-s <rleite-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 01:29:09 by rleite-s          #+#    #+#             */
-/*   Updated: 2022/06/10 21:06:45 by rleite-s         ###   ########.fr       */
+/*   Updated: 2022/06/18 02:25:53 by rleite-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_strcmp(const char *s1, const char *s2, size_t n)
+static int	ft_strcmp(const char *little, const char *big, size_t n)
 {
-	while (*s1 && n-- && *s1 == *s2)
+	while (*little && n-- && *little == *big)
 	{
-		s1++;
-		s2++;
+		little++;
+		big++;
 	}
-	return ((unsigned char)*s1);
+	return ((unsigned char)*little);
 }
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
