@@ -6,7 +6,7 @@
 /*   By: rleite-s <rleite-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 23:03:47 by rleite-s          #+#    #+#             */
-/*   Updated: 2022/06/17 22:06:17 by rleite-s         ###   ########.fr       */
+/*   Updated: 2022/06/18 23:13:00 by rleite-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,3 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
-
-/* int main(void)
-{
-	t_list *teste = ft_lstnew("Item inserido (essa String)");
-	printf("%s \n", (char *)teste->content);
-	int *tes = ft_calloc(2, sizeof(int));
-	tes[0] = 14;
-	tes[1] = 15;
-	teste = ft_lstnew(tes);
-	printf("%d \n", ((int *)teste->content)[0]);
-	teste = ft_lstnew("Nova string");
-	printf("%s \n", (char *)teste->content);
-	return (0);
-} */

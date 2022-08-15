@@ -6,7 +6,7 @@
 /*   By: rleite-s <rleite-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 17:25:35 by rleite-s          #+#    #+#             */
-/*   Updated: 2022/06/14 23:39:02 by rleite-s         ###   ########.fr       */
+/*   Updated: 2022/07/24 17:03:03 by rleite-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,8 @@ size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 
-	if (!s)
-		return (0);
 	len = 0;
-	while (s[len++])
+	while (s && s[len++])
 		;
 	return (len - 1);
 }
